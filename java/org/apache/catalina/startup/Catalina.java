@@ -701,7 +701,7 @@ public class Catalina {
             log.info("Server startup in " + ((t2 - t1) / 1000000) + " ms");
         }
 
-        // Register shutdown hook
+        // Register shutdown hook 注册关闭钩子
         if (useShutdownHook) {
             if (shutdownHook == null) {
                 shutdownHook = new CatalinaShutdownHook();
@@ -718,6 +718,7 @@ public class Catalina {
             }
         }
 
+        // 监听停止请求
         if (await) {
             await();
             stop();

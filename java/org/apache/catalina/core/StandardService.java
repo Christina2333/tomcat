@@ -101,6 +101,7 @@ public class StandardService extends LifecycleMBeanBase implements Service {
 
     /**
      * Mapper listener.
+     * 由于tomcat支持热部署，web容器变化时要实时把映射关系更新到Mapper（观察者模式）
      */
     protected final MapperListener mapperListener = new MapperListener(this);
 

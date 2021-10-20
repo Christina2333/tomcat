@@ -27,6 +27,7 @@ import java.util.Set;
 import javax.servlet.descriptor.JspConfigDescriptor;
 
 /**
+ * 运行所有servlet的web应用视图
  * Defines a set of methods that a servlet uses to communicate with its servlet
  * container, for example, to get the MIME type of a file, dispatch requests, or
  * write to a log file.

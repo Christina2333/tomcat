@@ -19,6 +19,7 @@ package javax.servlet;
 import java.util.Enumeration;
 
 /**
+ * 对应web.xml中的配置
  * A servlet configuration object used by a servlet container to pass
  * information to a servlet during initialization.
  */

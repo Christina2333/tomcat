@@ -452,6 +452,9 @@ public class Nio2Endpoint extends AbstractJsseEndpoint<Nio2Channel> {
         private boolean readInterest = false; // Guarded by readCompletionHandler
         private boolean readNotify = false;
 
+        /**
+         * 范型Integer是read调用的返回值，即有多少数据被写入到ByteBuffer，ByteBuffer即为写入到应用层的Buffer
+         */
         private final CompletionHandler<Integer, ByteBuffer> writeCompletionHandler;
         private final CompletionHandler<Long, ByteBuffer[]> gatheringWriteCompletionHandler;
         private final Semaphore writePending = new Semaphore(1);
